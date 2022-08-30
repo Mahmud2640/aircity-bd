@@ -1009,7 +1009,7 @@ label {
   line-height: 1;
 }
 .booking-form {
-  background: #f8f3e7;
+  /* background: #f8f3e7; */
   border-radius: 4px;
   border: 1px solid #ebebeb;
 }
@@ -2303,10 +2303,11 @@ label {
   width: 100%;
   height: 16px;
   display: block;
-  position: absolute;
+  /* position: absolute;/ */
   top: 10px;
   left: 0px;
-  background: url() no-repeat left center;
+  background: url(file:///Users/Mahmud/Downloads/367428.svg) no-repeat left
+    center;
 }
 .flightResultItemRow .fromToRouteBox .travelStopsBox {
   width: calc(100% - 20px);
@@ -2433,6 +2434,230 @@ label {
   border: 1px solid #d3c2cb;
   border-radius: 50%;
 }
+
+/* Flight Search Info */
+/* ============= Tab Search Section ============= */
+
+.tab-search {
+  padding: 30px 0px;
+  background: #316ffe;
+  padding-bottom: 70px;
+}
+.base-tab-list .nav-pills {
+  border-bottom: 1px solid #ffffff;
+}
+
+.tab-home-3 .base-tab-list .nav-pills {
+  border: none !important;
+}
+.base-tab-list .nav-pills a.active {
+  border-radius: 4px 4px 0px 0px;
+  background: #30bb4e;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.base-tab-list .nav-pills li.nav-item {
+}
+.base-tab-list .nav-pills a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  transition: all 0.4s;
+  font-size: 14px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.base-tab-list .nav-pills a:hover {
+  background: #30bb4e;
+}
+
+.tab-home-3 .base-tab-list .nav-pills a:hover {
+  color: #ffffff;
+}
+.base-tab-list .nav-pills a i {
+  margin-right: 8px;
+}
+.base-find-flight h1,
+.base-find-hotel h1,
+.base-find-tour h1,
+.base-find-car h1 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+.group-btn-flight i {
+  margin-right: 4px;
+  transition: all 0.4s;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  transform: rotate(0deg);
+  line-height: 25px;
+}
+
+.group-btn-flight a.btn.btn-primary {
+  margin: auto;
+  background: #33ca53;
+  border: 2px solid #33ca53;
+  width: 185px;
+  display: block;
+  transition: all 0.4s;
+}
+
+.group-btn-flight a.btn.btn-primary:hover i {
+  transform: rotate(90deg);
+  transition: all 0.4s ease;
+}
+.group-btn-flight a.btn.btn-primary:hover {
+  background: #33ca53;
+  border: 2px solid #33ca53 !important;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+.group-btn-flight {
+  text-align: center;
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -100px;
+}
+.find-flight-form,
+.find-hotel-form,
+.find-tour-form,
+.find-car-form {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.tab-home-2 .base-tab-list .nav-pills a.active {
+  border-radius: 4px 4px 4px 4px;
+  background: #33ca53;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.tab-home-2 .find-flight-form,
+.tab-home-2 .find-hotel-form,
+.tab-home-2 .find-tour-form,
+.tab-home-2 .find-car-form {
+  background: #fff;
+  padding: 28px 24px;
+  height: auto;
+  box-shadow: none;
+  padding-top: 0px;
+}
+.tab-home-3 .find-flight-form,
+.tab-home-3 .find-hotel-form,
+.tab-home-3 .find-tour-form,
+.tab-home-3 .find-car-form {
+  background: none;
+  padding: 28px 24px;
+  height: auto;
+  box-shadow: none;
+  padding-top: 0px;
+}
+.tab-home-3 .base-tab-content {
+  border-radius: 0px 0px 8px 8px;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.tab-home-3 .base-tab-list {
+  background: #f7f7f775;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.tab-home-3 .base-tab-list .nav-pills a {
+  color: #343a40;
+}
+
+.tab-home-3 .base-tab-content h1 {
+  margin: 0;
+  color: #212529;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.tab-home-2 .base-find-flight h1,
+.tab-home-2 .base-find-hotel h1,
+.tab-home-2 .base-find-tour h1,
+.tab-home-2 .base-find-car h1 {
+  color: #212529;
+  margin: 0px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+.tab-home-2 .base-find-flight,
+.tab-home-2 .base-find-hotel,
+.tab-home-2 .base-find-tour,
+.tab-home-2 .base-find-car {
+  background: #fff;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.tab-home-2 .base-tab-list .nav-pills {
+  border-bottom: 1px solid #ffffff;
+  border: none;
+  background: #fafafa;
+  padding: 8px 0px;
+  border-radius: 8px 8px 0px 0px;
+}
+.tab-home-2 .group-btn-flight a.btn.btn-primary {
+  margin: auto;
+  background: #33ca53;
+  border: 2px solid #33ca53;
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+.tab-home-2 .base-tab-list .nav-pills a {
+  color: #6c757d;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  font-size: 14px;
+  border-radius: 4px 4px 0px 0px;
+  padding: 8px 10px;
+  margin-right: 6px;
+}
+.tab-home-2 .base-tab-list .nav-pills a:hover {
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  font-size: 14px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 10px;
+}
+
+.tab-home-2 .base-tab-list .nav-pills a i {
+  margin-right: 8px;
+}
+
+.find-flight-form .form-group,
+.find-hotel-form .form-group,
+.find-tour-form .form-group,
+.find-car-form .form-group {
+  position: relative;
+}
+.find-flight-form .form-group i,
+.find-hotel-form .form-group i,
+.find-tour-form .form-group i,
+.find-car-form .form-group i {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  right: 0;
+  top: 32px;
+  color: #525252;
+}
+
+/* Flight Search End Info */
 
 /* booking-details */
 .customer-details-area {

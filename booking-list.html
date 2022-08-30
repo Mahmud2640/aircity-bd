@@ -191,471 +191,351 @@
     <!-- main-area -->
     <main>
       <!-- breadcrumb-area -->
-      <section class="breadcrumb-area breadcrumb-bg">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="breadcrumb-content text-center">
-                <h2 class="title">Booking List</h2>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      Booking List
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- breadcrumb-area-end -->
-      <!-- booking-area -->
-      <div class="booking-area booking-style-two">
+      <div class="base-tab-content">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="booking-wrap">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link active"
-                      id="bOOKing-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#bOOKing-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="bOOKing-tab-pane"
-                      aria-selected="true"
-                    >
-                      <i class="flaticon-flight"></i>air BOOKing
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="trips-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#trips-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="trips-tab-pane"
-                      aria-selected="false"
-                    >
-                      <i class="flaticon-file"></i> my trips
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="check-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#check-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="check-tab-pane"
-                      aria-selected="false"
-                    >
-                      <i class="flaticon-tick"></i> check-in
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="flight-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#flight-tab-pane"
-                      type="button"
-                      role="tab"
-                      aria-controls="flight-tab-pane"
-                      aria-selected="false"
-                    >
-                      <i class="flaticon-clock"></i> Flight status
-                    </button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="bOOKing-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="bOOKing-tab"
-                    tabindex="0"
-                  >
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="tab-content-wrap">
-                          <div class="content-top">
-                            <ul>
-                              <li class="active"><a href="#">Roundtrip</a></li>
-                              <li><a href="#">One-way</a></li>
-                              <li><a href="#">Multi-city</a></li>
-                            </ul>
+            <div class="col-md-12">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-flight"
+                  role="tabpanel"
+                  aria-labelledby="pills-flight-tab"
+                >
+                  <div class="base-find-flight">
+                    <div class="find-flight-title text-center">
+                      <h1>Find Your Flight</h1>
+                    </div>
+                    <div class="find-flight-form">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="group-radio">
+                            <div class="rdio form-check form-check-inline">
+                              <input
+                                name="radio"
+                                value="1"
+                                id="radio1"
+                                type="radio"
+                                checked
+                              />
+                              <label for="radio1">One-way</label>
+                            </div>
+                            <div class="rdio form-check form-check-inline">
+                              <input
+                                name="radio"
+                                value="2"
+                                id="radio2"
+                                type="radio"
+                              />
+                              <label for="radio2">Return</label>
+                            </div>
+                            <div class="rdio form-check form-check-inline">
+                              <input
+                                name="radio"
+                                value="3"
+                                id="radio3"
+                                type="radio"
+                              />
+                              <label for="radio3">Multicities</label>
+                            </div>
                           </div>
-                          <form action="#" class="booking-form">
-                            <ul>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="From" />
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="To" />
-                                  <button class="exchange-icon">
-                                    <i class="flaticon-exchange-1"></i>
-                                  </button>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp select">
-                                  <label for="shortBy">Trip</label>
-                                  <select
-                                    id="shortBy"
-                                    name="select"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option value="">Tour type</option>
-                                    <option>Adventure Travel</option>
-                                    <option>Family Tours</option>
-                                    <option>Newest Item</option>
-                                    <option>Nature & wildlife</option>
-                                  </select>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp date">
-                                  <ul>
-                                    <li>
-                                      <label for="shortBy">Depart</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                    <li>
-                                      <label for="shortBy">Return</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                  </ul>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp economy">
-                                  <label for="text">Passenger/ Class</label>
-                                  <input
-                                    type="text"
-                                    id="text"
-                                    placeholder="1 Passenger, Economy"
-                                  />
-                                </div>
-                              </li>
-                            </ul>
-                          </form>
-                          <div class="content-bottom">
-                            <a href="booking-details.html" class="promo-code"
-                              >+ Add Promo code</a
-                            >
-                            <a href="booking-details.html" class="btn"
-                              >Show Flights <i class="flaticon-flight-1"></i
-                            ></a>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                          <div class="form-group">
+                            <label>Where do you want to go?</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Write the place"
+                            />
+                            <i class="fas fa-map-marker-alt"></i>
+                          </div>
+                        </div>
+
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Check in</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Check out</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Adult</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Children</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="group-btn-flight">
+                            <a href="./flight.html" class="btn btn-primary"
+                              ><i class="fas fa-search"></i>Search now
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="trips-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="trips-tab"
-                    tabindex="0"
-                  >
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="tab-content-wrap">
-                          <div class="content-top">
-                            <ul>
-                              <li class="active"><a href="#">Roundtrip</a></li>
-                              <li><a href="#">One-way</a></li>
-                              <li><a href="#">Multi-city</a></li>
-                            </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-hotel"
+                  role="tabpanel"
+                  aria-labelledby="pills-hotel-tab"
+                >
+                  <div class="base-find-hotel">
+                    <div class="find-hotel-title text-center">
+                      <h1>Find Your Hotel</h1>
+                    </div>
+                    <div class="find-hotel-form">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                          <div class="form-group">
+                            <label>Where do you want to go?</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Write the place"
+                            />
+                            <i class="fas fa-map-marker-alt"></i>
                           </div>
-                          <form action="#" class="booking-form">
-                            <ul>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="From" />
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="To" />
-                                  <button class="exchange-icon">
-                                    <i class="flaticon-exchange-1"></i>
-                                  </button>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp select">
-                                  <label for="shortByTwo">Trip</label>
-                                  <select
-                                    id="shortByTwo"
-                                    name="select"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option value="">Tour type</option>
-                                    <option>Adventure Travel</option>
-                                    <option>Family Tours</option>
-                                    <option>Newest Item</option>
-                                    <option>Nature & wildlife</option>
-                                  </select>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp date">
-                                  <ul>
-                                    <li>
-                                      <label for="shortBy">Depart</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                    <li>
-                                      <label for="shortBy">Return</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                  </ul>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp economy">
-                                  <label for="textTwo">Passenger/ Class</label>
-                                  <input
-                                    type="text"
-                                    id="textTwo"
-                                    placeholder="1 Passenger, Economy"
-                                  />
-                                </div>
-                              </li>
-                            </ul>
-                          </form>
-                          <div class="content-bottom">
-                            <a href="booking-details.html" class="promo-code"
-                              >+ Add Promo code</a
-                            >
-                            <a href="booking-details.html" class="btn"
-                              >Show Flights <i class="flaticon-flight-1"></i
-                            ></a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Check in</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Check out</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Adult</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Children</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="group-btn-flight">
+                            <a href="" class="btn btn-primary"
+                              ><i class="fas fa-search"></i>Search now
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="check-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="check-tab"
-                    tabindex="0"
-                  >
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="tab-content-wrap">
-                          <div class="content-top">
-                            <ul>
-                              <li class="active"><a href="#">Roundtrip</a></li>
-                              <li><a href="#">One-way</a></li>
-                              <li><a href="#">Multi-city</a></li>
-                            </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-tour"
+                  role="tabpanel"
+                  aria-labelledby="pills-tour-tab"
+                >
+                  <div class="base-find-tour">
+                    <div class="find-tour-title text-center">
+                      <h1>Find Your Tours</h1>
+                    </div>
+                    <div class="find-tour-form">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                          <div class="form-group">
+                            <label>Where do you want to go?</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Write the place"
+                            />
+                            <i class="fas fa-map-marker-alt"></i>
                           </div>
-                          <form action="#" class="booking-form">
-                            <ul>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="From" />
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="To" />
-                                  <button class="exchange-icon">
-                                    <i class="flaticon-exchange-1"></i>
-                                  </button>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp select">
-                                  <label for="shortByThree">Trip</label>
-                                  <select
-                                    id="shortByThree"
-                                    name="select"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option value="">Tour type</option>
-                                    <option>Adventure Travel</option>
-                                    <option>Family Tours</option>
-                                    <option>Newest Item</option>
-                                    <option>Nature & wildlife</option>
-                                  </select>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp date">
-                                  <ul>
-                                    <li>
-                                      <label for="shortBy">Depart</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                    <li>
-                                      <label for="shortBy">Return</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                  </ul>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp economy">
-                                  <label for="textThree"
-                                    >Passenger/ Class</label
-                                  >
-                                  <input
-                                    type="text"
-                                    id="textThree"
-                                    placeholder="1 Passenger, Economy"
-                                  />
-                                </div>
-                              </li>
-                            </ul>
-                          </form>
-                          <div class="content-bottom">
-                            <a href="booking-details.html" class="promo-code"
-                              >+ Add Promo code</a
-                            >
-                            <a href="booking-details.html" class="btn"
-                              >Show Flights <i class="flaticon-flight-1"></i
-                            ></a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Start date</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Return date</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Adult</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Children</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="group-btn-flight">
+                            <a href="" class="btn btn-primary"
+                              ><i class="fas fa-search"></i>Search now
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="flight-tab-pane"
-                    role="tabpanel"
-                    aria-labelledby="flight-tab"
-                    tabindex="0"
-                  >
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="tab-content-wrap">
-                          <div class="content-top">
-                            <ul>
-                              <li class="active"><a href="#">Roundtrip</a></li>
-                              <li><a href="#">One-way</a></li>
-                              <li><a href="#">Multi-city</a></li>
-                            </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-car"
+                  role="tabpanel"
+                  aria-labelledby="pills-car-tab"
+                >
+                  <div class="base-find-car">
+                    <div class="find-car-title text-center">
+                      <h1>Find Car</h1>
+                    </div>
+                    <div class="find-car-form">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-4">
+                          <div class="form-group">
+                            <label>Where do you want to go?</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Write the place"
+                            />
+                            <i class="fas fa-map-marker-alt"></i>
                           </div>
-                          <form action="#" class="booking-form">
-                            <ul>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="From" />
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp">
-                                  <input type="text" placeholder="To" />
-                                  <button class="exchange-icon">
-                                    <i class="flaticon-exchange-1"></i>
-                                  </button>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp select">
-                                  <label for="shortByFour">Trip</label>
-                                  <select
-                                    id="shortByFour"
-                                    name="select"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                  >
-                                    <option value="">Tour type</option>
-                                    <option>Adventure Travel</option>
-                                    <option>Family Tours</option>
-                                    <option>Newest Item</option>
-                                    <option>Nature & wildlife</option>
-                                  </select>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp date">
-                                  <ul>
-                                    <li>
-                                      <label for="shortBy">Depart</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                    <li>
-                                      <label for="shortBy">Return</label>
-                                      <input
-                                        type="text"
-                                        class="date"
-                                        placeholder="Select Date"
-                                      />
-                                    </li>
-                                  </ul>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-grp economy">
-                                  <label for="textFour">Passenger/ Class</label>
-                                  <input
-                                    type="text"
-                                    id="textFour"
-                                    placeholder="1 Passenger, Economy"
-                                  />
-                                </div>
-                              </li>
-                            </ul>
-                          </form>
-                          <div class="content-bottom">
-                            <a href="booking-details.html" class="promo-code"
-                              >+ Add Promo code</a
-                            >
-                            <a href="booking-details.html" class="btn"
-                              >Show Flights <i class="flaticon-flight-1"></i
-                            ></a>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Start date</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
                           </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>Return date</label>
+                            <input
+                              type="text"
+                              class="form-control date"
+                              placeholder="MM/DD/YY"
+                            />
+                            <i class="fas fa-calendar-alt"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>No. of Car</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-car"></i>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                          <div class="form-group">
+                            <label>People</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                            />
+                            <i class="fas fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <!-- <div class="group-btn-flight">
+                            <a href="" class="btn btn-primary"
+                              ><i class="fas fa-search"></i>Search now
+                            </a>
+                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -666,6 +546,7 @@
           </div>
         </div>
       </div>
+
       <!-- booking-area-end -->
 
       <!-- booking-list-area -->
