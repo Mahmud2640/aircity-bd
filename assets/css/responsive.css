@@ -1,9 +1,7 @@
 /* Extra large devices (large desktops, 1800px and up) */
 @media (max-width: 1800px) {
 
-
 }
-
 
 /* Extra large devices (large desktops, 1800px and up) */
 @media (max-width: 1500px) {
@@ -740,7 +738,7 @@
 	margin-bottom: 0;
 }
 .transparent-header:not(.sticky-menu) {
-	top: 72px;
+	top: 15px;
 }
 .about-img .img-two {
 	width: 270px;
