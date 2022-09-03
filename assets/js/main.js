@@ -1,18 +1,31 @@
 (function ($) {
 	"use strict";
 
-/*=============================================
-	=    		 Preloader			      =
-=============================================*/
-function preloader() {
-	$('#preloader').delay(0).fadeOut();
-};
+// /*=============================================
+// 	=    		 Preloader			      =
+// =============================================*/
+// function preloader() {
+// 	$('#preloader').delay(0).fadeOut();
+// };
 
-$(window).on('load', function () {
-	preloader();
-	mainSlider();
-	wowAnimation();
-});
+// $(window).on('load', function () {
+// 	preloader();
+// 	mainSlider();
+// 	wowAnimation();
+// });
+
+// ================================== Preloader ==================================
+
+$(window).on("load", function () {
+	var preloaderFadeOutTime = 500;
+	function hidePreloader() {
+	  var preloader = $(".spinner-wrapper");
+	  setTimeout(function () {
+		 preloader.fadeOut(preloaderFadeOutTime);
+	  }, 500);
+	}
+	hidePreloader();
+ });
 
 
 
