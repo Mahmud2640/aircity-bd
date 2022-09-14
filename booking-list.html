@@ -373,6 +373,100 @@
                         <i class="fa-solid fa-angle-down"></i> Flight Detail
                       </li>
                       <li class="refund">Refundable</li>
+                      <li
+                        class="rules"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        Fare Rules
+                        <!-- modal info -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  AircityBD Fare Rules
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>
+                                  &#xa0;Online: KWD 18.000 (or equivalent) fee
+                                  per sector per Guest within 1-3 days of flight
+                                  departure. ·&#xa0; &#xa0; &#xa0;Online: KWD
+                                  15.000 (or equivalent) fee per sector per
+                                  Guest if modified more than 4 days of flight
+                                  departure. ·&#xa0; &#xa0; &#xa0;Partial
+                                  Cancellations (To be done only through Jazeera
+                                  Airways Offices): Deduct 70% of the Total Fare
+                                  or One-way fare of the flown sector (whichever
+                                  is higher) + Applicable fees as per above
+                                  grid. ·&#xa0; &#xa0; &#xa0;Remaining balance
+                                  held in Credit for 1 year to be used only by
+                                  the booking holder. ** Failure to advise
+                                  Jazeera Airways of changes / cancellations as
+                                  outlined above or to check in at least one (1)
+                                  hour prior to schedule departure, will result
+                                  in the cancellation of the itinerary and
+                                  forfeiture of all associated funds. Any
+                                  subsequent flights will also be canceled and
+                                  funds forfeited. The booking you have
+                                  purchased is valid only for transportation in
+                                  sequence as shown on the ticket, from the
+                                  place of origin departure to the final
+                                  destination. If travel is not performed in the
+                                  sequence provided in the booking, the
+                                  ticket/itinerary will not be honored and will
+                                  lose its validity. Maintaining such a sequence
+                                  forms an essential part of our contract with
+                                  you. Min/Max Stay: ·&#xa0; &#xa0;
+                                  &#xa0;Minimum Stay: None ·&#xa0; &#xa0;
+                                  &#xa0;Maximum Stay: 365 days (Travel from last
+                                  International Stopover must commence no later
+                                  than 365 days after departure from Fare
+                                  origin) ·&#xa0; &#xa0; &#xa0;For mixed class
+                                  bookings, most restrictive conditions will
+                                  apply on the entire journey ·&#xa0; &#xa0;
+                                  &#xa0;The booking you have purchased is valid
+                                  only for transportation in sequence as shown
+                                  on the ticket, from the place of origin
+                                  departure to the final destination. If travel
+                                  is not performed in the sequence provided in
+                                  the booking, the ticket/itinerary will not be
+                                  honored and will lose its validity.
+                                  Maintaining such a sequence forms an essential
+                                  part of our contract with you. Payment by
+                                  Credit Cards: ·&#xa0; &#xa0; &#xa0;Passengers
+                                  must provide their credit card or front side
+                                  copy used for payment as a proof of purchase
+                                  at the time of check in. ·&#xa0; &#xa0;
+                                  &#xa0;In case passenger being other than
+                                  credit card holder, a copy of the credit card
+                                  used for payment and a photo id of card holder
+                                  as proof of purchase must be presented upon
+                                  check-in. ** Airfares are subject to change or
+                                  withdrawal without prior notice. Airfares
+                                  (excluding government imposed taxes and
+                                  charges) are only guaranteed if paid for in
+                                  full at the time of booking.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                       <li id="price" class="detail">
                         <i class="fa-solid fa-angle-down"></i> Price Detail
                       </li>
@@ -381,23 +475,16 @@
                 </div>
                 <div class="flight-detail-wrap">
                   <!-- mew iption added -->
-
-                  <!--
-Fare Summary
-Discount & Gross
-Baggage
-Cancellation
-Date Change -->
                   <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                       <button
                         class="nav-link active"
                         id="nav-home-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-home"
+                        data-bs-target="#nav-flight"
                         type="button"
                         role="tab"
-                        aria-controls="nav-home"
+                        aria-controls="nav-flight"
                         aria-selected="true"
                       >
                         Flight Details
@@ -406,10 +493,10 @@ Date Change -->
                         class="nav-link"
                         id="nav-profile-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-profile"
+                        data-bs-target="#nav-fare"
                         type="button"
                         role="tab"
-                        aria-controls="nav-profile"
+                        aria-controls="nav-fare"
                         aria-selected="false"
                       >
                         Fare Summary
@@ -418,20 +505,44 @@ Date Change -->
                         class="nav-link"
                         id="nav-contact-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-contact"
+                        data-bs-target="#nav-discount"
                         type="button"
                         role="tab"
-                        aria-controls="nav-contact"
+                        aria-controls="nav-discount"
                         aria-selected="false"
                       >
                         Discount & Gross
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-cancellation"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-cancellation"
+                        aria-selected="false"
+                      >
+                        Cancellation
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-date"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-date"
+                        aria-selected="false"
+                      >
+                        Date Change
                       </button>
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div
                       class="tab-pane fade show active"
-                      id="nav-home"
+                      id="nav-flight"
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
                     >
@@ -440,7 +551,7 @@ Date Change -->
                     </div>
                     <div
                       class="tab-pane fade"
-                      id="nav-profile"
+                      id="nav-fare"
                       role="tabpanel"
                       aria-labelledby="nav-profile-tab"
                     >
@@ -451,7 +562,27 @@ Date Change -->
                     </div>
                     <div
                       class="tab-pane fade"
-                      id="nav-contact"
+                      id="nav-cancellation"
+                      role="tabpanel"
+                      aria-labelledby="nav-contact-tab"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus error laudantium voluptatum vitae veritatis
+                      necessitatibus officia obcaecati tempora libero placeat?
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-discount"
+                      role="tabpanel"
+                      aria-labelledby="nav-contact-tab"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus error laudantium voluptatum vitae veritatis
+                      necessitatibus officia obcaecati tempora libero placeat?
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-date"
                       role="tabpanel"
                       aria-labelledby="nav-contact-tab"
                     >

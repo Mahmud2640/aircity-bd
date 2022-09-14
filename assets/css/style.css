@@ -1056,6 +1056,11 @@ label {
   margin-top: 3px;
 }
 
+.rules {
+  cursor: pointer;
+  color: #1696e7;
+}
+
 /* breadcrumb-two */
 .breadcrumb-area-two.breadcrumb-bg {
   background-image: url(../img/bg/breadcrumb-bg02.jpg);
